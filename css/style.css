@@ -45,5 +45,8 @@ table {
   border-spacing: 0; }
 
 body {
-  background-image: url(img/logo_body.svg);
-  background-color: #000; }
+  height: 100vh;
+  background-image: url("../img/logo_body.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #ccc; }
