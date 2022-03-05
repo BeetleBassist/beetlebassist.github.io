@@ -1,2 +1,2 @@
 # beetlebassist.github.io
-IvanZhuk.pro
+Hosting for my website IvanZhuk.pro

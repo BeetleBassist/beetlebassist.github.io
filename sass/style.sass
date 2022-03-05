@@ -8,37 +8,39 @@
 body
     float: left
     min-width: 100%
-    header
-        background-color: $color_hf
-        .wrapper
-            display: flex
-            justify-content: space-between
-            nav
-                @extend %flex-center
-                align-items: center
-                a
-                    width: 100px
+    background-color: #848484
+    .nofooter
+        min-height: calc(100vh - 120px)
+        header
+            background-color: $color_hf
+            .wrapper
+                display: flex
+                justify-content: space-between
+                nav
                     @extend %flex-center
-                    font-size: 2em
-                    text-decoration: none
-                    color: black
-                    &:hover
-                        color: $color
-            svg
-                width: 100px
-                path:hover
-                    fill: $color
-    main
-        background-color: #848484
-        article
-            p
-                font-family: "Pangolin", cursive
-                font-size: 3em
-                color: $color
-                &:nth-child(1)
-                    padding: 100px 0 0 200px
-                &:nth-child(2)
-                    padding: 50px 0 100px 50px
+                    align-items: center
+                    a
+                        width: 100px
+                        @extend %flex-center
+                        font-size: 2em
+                        text-decoration: none
+                        color: black
+                        &:hover
+                            color: $color
+                svg
+                    width: 100px
+                    path:hover
+                        fill: $color
+        main
+            article
+                p
+                    font-family: "Pangolin", cursive
+                    font-size: 3em
+                    color: $color
+                    &:nth-child(1)
+                        padding: 100px 0 0 200px
+                    &:nth-child(2)
+                        padding: 50px 0 100px 50px
     footer
         background-color: $color_hf
         .contacts
