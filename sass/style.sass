@@ -1,76 +1,102 @@
 @import _reset.sass
 @import _variables.sass
     
-.wrapper
-    width: $main_width
-    margin: 0 auto
-
 body
     float: left
     min-width: 100%
-    background-color: #848484
+    background-color: $color_m
     .nofooter
-        min-height: calc(100vh - 120px)
+        min-height: calc(100vh - #{$height_hf})
+        //float: left
+        //width: 100%
         header
             background-color: $color_hf
-            .wrapper
-                display: flex
-                justify-content: space-between
-                nav
-                    @extend %flex-center
-                    align-items: center
-                    a
-                        width: 100px
-                        @extend %flex-center
-                        font-size: 2em
-                        text-decoration: none
-                        color: black
-                        &:hover
-                            color: $color
-                svg
+            display: flex
+            justify-content: flex-end
+            height: $height_hf
+            nav
+                @extend %flex-center
+                justify-content: center
+                a
                     width: 100px
-                    path:hover
-                        fill: $color
+                    @extend %flex-center
+                    justify-content: center
+                    font-family: "Pangolin", cursive
+                    font-size: 2em
+                    text-decoration: none
+                    color: $color_b
+                    &:hover
+                        color: $color
         main
-            article
-                p
+            .block
+                float: left
+                width: 50%
+                .hello
+                    @extend %flex-center
+                    justify-content: space-around
+                    padding: 50px
+                    svg
+                        width: 200px
+                        path:hover
+                            fill: $color
+                    span
+                        font-family: "Pangolin", cursive
+                        font-size: 7em
+                        color: $color
+                .about
+                    padding: 50px
+                    p
+                        font-family: "Pangolin", cursive
+                        font-size: 3em
+                        color: $color
+                .line
+                    @extend %flex-center
+                    justify-content: space-evenly
+                    padding: 1em 0 0 0
                     font-family: "Pangolin", cursive
                     font-size: 3em
                     color: $color
-                    &:nth-child(1)
-                        padding: 100px 0 0 200px
-                    &:nth-child(2)
-                        padding: 50px 0 100px 50px
+                    a
+                        @extend %flex-center
+                        text-decoration: none
+                        color: $color_b
+                        svg
+                            width: 1.2em
+                        &:hover
+                            path
+                                fill: $color
+                .resume
+                    a
+                        &:nth-child(1)
+                            display: inline
+                            width: 2.5em
+                            border-radius: 1.5em
+                            &:hover
+                                background: $color
+                        sup
+                            font-size: 0.5em
+                            vertical-align: text-top
+                .mail
+                    padding: 1em 0 1em 0
+                    a
+                        &:hover
+                            color: $color
     footer
         background-color: $color_hf
-        .contacts
-            height: 120px
-            display: grid
-            grid-template-columns: 1fr 1fr
-            grid-template-rows: 1fr 1fr
-            section
-                &:nth-child(1)
-                    grid-area: 1 / 1 / 3 / 2
-                    place-self: center
-                    font-family: "Pangolin", cursive
-                    font-size: 3em
-                &:nth-child(2)
-                    grid-area: 1 / 2 / 2 / 3
-                    place-self: center
-                    a
-                        font-family: "Pangolin", cursive
-                        font-size: 2em
-                        text-decoration: none
-                        color: black
-                        &:hover
-                            color: $color
-                &:nth-child(3)
-                    grid-area: 2 / 2 / 3 / 3
-                    place-self: center
-                    a
-                        font-family: "Pangolin", cursive
-                        font-size: 2em
-                        text-decoration: none
-                        color: black
-                        &:hover
-                            color: $color
+        float: left
+        width: 100%
+        .copyright
+            height: $height_hf
+            @extend %flex-center
+            justify-content: space-evenly
+            font-family: "Pangolin", cursive
+            font-size: 2em
+            color: $color_b
+            
+@media (max-width: 950px)
+    body
+        .nofooter
+            min-height: initial
+            main
+                .block
+                    width: 100%

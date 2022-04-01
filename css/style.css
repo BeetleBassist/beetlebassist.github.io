@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/
- * v2.0 | 20110126
- * License: none (public domain) */
+   v2.0 | 20110126
+   License: none (public domain) */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -37,7 +37,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
+  content: '';
   content: none; }
 
 table {
@@ -47,75 +47,92 @@ table {
 @font-face {
   font-family: "Pangolin";
   src: url("../fonts/Pangolin/pangolin-v4-cyrillic_latin-regular.eot"), url("../fonts/Pangolin/pangolin-v4-cyrillic_latin-regular.woff2") format("woff2"), url("../fonts/Pangolin/pangolin-v4-cyrillic_latin-regular.woff") format("woff"), url("../fonts/Pangolin/pangolin-v4-cyrillic_latin-regular.ttf") format("truetype"), url("../fonts/Pangolin/pangolin-v4-cyrillic_latin-regular.svg#Pangolin") format("svg"); }
-body .nofooter header .wrapper nav, body .nofooter header .wrapper nav a {
-  display: flex;
-  justify-content: center; }
 
-.wrapper {
-  width: 1200px;
-  margin: 0 auto; }
+body .nofooter header nav, body .nofooter header nav a, body .nofooter main .block .hello, body .nofooter main .block .line, body .nofooter main .block .line a, body footer .copyright {
+  display: flex;
+  align-items: center; }
 
 body {
   float: left;
   min-width: 100%;
   background-color: #848484; }
   body .nofooter {
-    min-height: calc(100vh - 120px); }
+    min-height: calc(100vh - 80px); }
     body .nofooter header {
-      background-color: #646464; }
-      body .nofooter header .wrapper {
-        display: flex;
-        justify-content: space-between; }
-        body .nofooter header .wrapper nav {
-          align-items: center; }
-          body .nofooter header .wrapper nav a {
-            width: 100px;
-            font-size: 2em;
-            text-decoration: none;
-            color: black; }
-            body .nofooter header .wrapper nav a:hover {
-              color: #FFB700; }
-        body .nofooter header .wrapper svg {
-          width: 100px; }
-          body .nofooter header .wrapper svg path:hover {
-            fill: #FFB700; }
-    body .nofooter main article p {
-      font-family: "Pangolin", cursive;
-      font-size: 3em;
-      color: #FFB700; }
-      body .nofooter main article p:nth-child(1) {
-        padding: 100px 0 0 200px; }
-      body .nofooter main article p:nth-child(2) {
-        padding: 50px 0 100px 50px; }
-  body footer {
-    background-color: #646464; }
-    body footer .contacts {
-      height: 120px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr; }
-      body footer .contacts section:nth-child(1) {
-        grid-area: 1/1/3/2;
-        place-self: center;
+      background-color: #646464;
+      display: flex;
+      justify-content: flex-end;
+      height: 80px; }
+      body .nofooter header nav {
+        justify-content: center; }
+        body .nofooter header nav a {
+          width: 100px;
+          justify-content: center;
+          font-family: "Pangolin", cursive;
+          font-size: 2em;
+          text-decoration: none;
+          color: #000000; }
+          body .nofooter header nav a:hover {
+            color: #FF9100; }
+    body .nofooter main .block {
+      float: left;
+      width: 50%; }
+      body .nofooter main .block .hello {
+        justify-content: space-around;
+        padding: 50px; }
+        body .nofooter main .block .hello svg {
+          width: 200px; }
+          body .nofooter main .block .hello svg path:hover {
+            fill: #FF9100; }
+        body .nofooter main .block .hello span {
+          font-family: "Pangolin", cursive;
+          font-size: 7em;
+          color: #FF9100; }
+      body .nofooter main .block .about {
+        padding: 50px; }
+        body .nofooter main .block .about p {
+          font-family: "Pangolin", cursive;
+          font-size: 3em;
+          color: #FF9100; }
+      body .nofooter main .block .line {
+        justify-content: space-evenly;
+        padding: 1em 0 0 0;
         font-family: "Pangolin", cursive;
-        font-size: 3em; }
-      body footer .contacts section:nth-child(2) {
-        grid-area: 1/2/2/3;
-        place-self: center; }
-        body footer .contacts section:nth-child(2) a {
-          font-family: "Pangolin", cursive;
-          font-size: 2em;
+        font-size: 3em;
+        color: #FF9100; }
+        body .nofooter main .block .line a {
           text-decoration: none;
-          color: black; }
-          body footer .contacts section:nth-child(2) a:hover {
-            color: #FFB700; }
-      body footer .contacts section:nth-child(3) {
-        grid-area: 2/2/3/3;
-        place-self: center; }
-        body footer .contacts section:nth-child(3) a {
-          font-family: "Pangolin", cursive;
-          font-size: 2em;
-          text-decoration: none;
-          color: black; }
-          body footer .contacts section:nth-child(3) a:hover {
-            color: #FFB700; }
+          color: #000000; }
+          body .nofooter main .block .line a svg {
+            width: 1.2em; }
+          body .nofooter main .block .line a:hover path {
+            fill: #FF9100; }
+      body .nofooter main .block .resume a:nth-child(1) {
+        display: inline;
+        width: 2.5em;
+        border-radius: 1.5em; }
+        body .nofooter main .block .resume a:nth-child(1):hover {
+          background: #FF9100; }
+      body .nofooter main .block .resume a sup {
+        font-size: 0.5em;
+        vertical-align: text-top; }
+      body .nofooter main .block .mail {
+        padding: 1em 0 1em 0; }
+        body .nofooter main .block .mail a:hover {
+          color: #FF9100; }
+  body footer {
+    background-color: #646464;
+    float: left;
+    width: 100%; }
+    body footer .copyright {
+      height: 80px;
+      justify-content: space-evenly;
+      font-family: "Pangolin", cursive;
+      font-size: 2em;
+      color: #000000; }
+
+@media (max-width: 950px) {
+  body .nofooter {
+    min-height: initial; }
+    body .nofooter main .block {
+      width: 100%; } }
