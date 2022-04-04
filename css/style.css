@@ -135,4 +135,18 @@ body {
   body .nofooter {
     min-height: initial; }
     body .nofooter main .block {
-      width: 100%; } }
+      width: 100%; }
+      body .nofooter main .block .hello {
+        padding: 50px 10px; }
+        body .nofooter main .block .hello svg {
+          width: 115px; }
+        body .nofooter main .block .hello span {
+          font-size: 5.5em; }
+      body .nofooter main .block .about {
+        padding: 50px 10px; }
+        body .nofooter main .block .about p {
+          font-size: 2em; }
+      body .nofooter main .block .mail {
+        font-size: 2em; }
+  body footer .copyright {
+    font-size: 1.5em; } }
