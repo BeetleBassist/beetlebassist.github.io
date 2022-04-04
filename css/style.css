@@ -100,6 +100,8 @@ body {
         font-family: "Pangolin", cursive;
         font-size: 3em;
         color: #FF9100; }
+        body .nofooter main .block .line span {
+          font-size: 1.5em; }
         body .nofooter main .block .line a {
           text-decoration: none;
           color: #000000; }
@@ -117,7 +119,7 @@ body {
         font-size: 0.5em;
         vertical-align: text-top; }
       body .nofooter main .block .mail {
-        padding: 1em 0 1em 0; }
+        padding: 1.1em 0 1.1em 0; }
         body .nofooter main .block .mail a:hover {
           color: #FF9100; }
   body footer {
@@ -146,7 +148,10 @@ body {
         padding: 50px 10px; }
         body .nofooter main .block .about p {
           font-size: 2em; }
+      body .nofooter main .block .line span {
+        font-size: 1em; }
       body .nofooter main .block .mail {
-        font-size: 2em; }
+        font-size: 2em;
+        padding: 1.2em 0 1.2em 0; }
   body footer .copyright {
     font-size: 1.5em; } }
