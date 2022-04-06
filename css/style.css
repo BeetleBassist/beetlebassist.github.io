@@ -79,7 +79,7 @@ body {
       width: 50%; }
       body .nofooter main .block .hello {
         justify-content: space-around;
-        padding: 50px; }
+        padding: 50px 50px 25px 50px; }
         body .nofooter main .block .hello svg {
           width: 200px; }
           body .nofooter main .block .hello svg path:hover {
@@ -89,14 +89,22 @@ body {
           font-size: 7em;
           color: #FF9100; }
       body .nofooter main .block .about {
-        padding: 50px; }
+        padding: 25px 50px 25px 50px; }
         body .nofooter main .block .about p {
           font-family: "Pangolin", cursive;
-          font-size: 3em;
+          font-size: 2.3em;
+          line-height: 1.2;
+          text-indent: 1em;
+          text-align: justify;
           color: #FF9100; }
+          body .nofooter main .block .about p a {
+            text-decoration: none;
+            color: #000000; }
+            body .nofooter main .block .about p a:hover {
+              color: #FF9100; }
       body .nofooter main .block .line {
         justify-content: space-evenly;
-        padding: 1em 0 0 0;
+        padding: 1.1em 0 0 0;
         font-family: "Pangolin", cursive;
         font-size: 3em;
         color: #FF9100; }
@@ -106,11 +114,12 @@ body {
           text-decoration: none;
           color: #000000; }
           body .nofooter main .block .line a svg {
-            width: 1.2em; }
+            width: 1.5em; }
           body .nofooter main .block .line a:hover path {
             fill: #FF9100; }
       body .nofooter main .block .resume a:nth-child(1) {
         display: inline;
+        font-size: 1.5em;
         width: 2.5em;
         border-radius: 1.5em; }
         body .nofooter main .block .resume a:nth-child(1):hover {
@@ -119,7 +128,8 @@ body {
         font-size: 0.5em;
         vertical-align: text-top; }
       body .nofooter main .block .mail {
-        padding: 1.1em 0 1.1em 0; }
+        font-size: 4em;
+        padding: 1.3em 0 1.1em 0; }
         body .nofooter main .block .mail a:hover {
           color: #FF9100; }
   body footer {
@@ -139,19 +149,27 @@ body {
     body .nofooter main .block {
       width: 100%; }
       body .nofooter main .block .hello {
-        padding: 50px 10px; }
+        padding: 20px 10px 10px 10px; }
         body .nofooter main .block .hello svg {
           width: 115px; }
         body .nofooter main .block .hello span {
           font-size: 5.5em; }
       body .nofooter main .block .about {
-        padding: 50px 10px; }
+        padding: 10px 10px 20px 10px; }
         body .nofooter main .block .about p {
-          font-size: 2em; }
-      body .nofooter main .block .line span {
-        font-size: 1em; }
+          font-size: 1.8em; }
+      body .nofooter main .block .line {
+        justify-content: space-around; }
+        body .nofooter main .block .line span {
+          font-size: 1em; }
+        body .nofooter main .block .line a svg {
+          width: 1.3em; }
+      body .nofooter main .block .aboutme {
+        padding: 0.5em 0 0 0; }
+      body .nofooter main .block .resume a:nth-child(1) {
+        font-size: 1.2em; }
       body .nofooter main .block .mail {
-        font-size: 2em;
+        font-size: 2.3em;
         padding: 1.2em 0 1.2em 0; }
   body footer .copyright {
     font-size: 1.5em; } }

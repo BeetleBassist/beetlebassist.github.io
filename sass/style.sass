@@ -34,7 +34,7 @@ body
                 .hello
                     @extend %flex-center
                     justify-content: space-around
-                    padding: 50px
+                    padding: 50px 50px 25px 50px
                     svg
                         width: 200px
                         path:hover
@@ -44,15 +44,23 @@ body
                         font-size: 7em
                         color: $color
                 .about
-                    padding: 50px
+                    padding: 25px 50px 25px 50px
                     p
                         font-family: "Pangolin", cursive
-                        font-size: 3em
+                        font-size: 2.3em
+                        line-height: 1.2
+                        text-indent: 1em
+                        text-align: justify
                         color: $color
+                        a
+                            text-decoration: none
+                            color: $color_b
+                            &:hover
+                                color: $color
                 .line
                     @extend %flex-center
                     justify-content: space-evenly
-                    padding: 1em 0 0 0
+                    padding: 1.1em 0 0 0
                     font-family: "Pangolin", cursive
                     font-size: 3em
                     color: $color
@@ -63,7 +71,7 @@ body
                         text-decoration: none
                         color: $color_b
                         svg
-                            width: 1.2em
+                            width: 1.5em
                         &:hover
                             path
                                 fill: $color
@@ -71,6 +79,7 @@ body
                     a
                         &:nth-child(1)
                             display: inline
+                            font-size: 1.5em
                             width: 2.5em
                             border-radius: 1.5em
                             &:hover
@@ -79,7 +88,8 @@ body
                             font-size: 0.5em
                             vertical-align: text-top
                 .mail
-                    padding: 1.1em 0 1.1em 0
+                    font-size: 4em
+                    padding: 1.3em 0 1.1em 0
                     a
                         &:hover
                             color: $color
