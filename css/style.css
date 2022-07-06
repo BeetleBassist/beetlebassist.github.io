@@ -45,131 +45,341 @@ table {
   border-spacing: 0; }
 
 @font-face {
-  font-family: "Pangolin";
-  src: url("../fonts/Pangolin/pangolin-v4-cyrillic_latin-regular.eot"), url("../fonts/Pangolin/pangolin-v4-cyrillic_latin-regular.woff2") format("woff2"), url("../fonts/Pangolin/pangolin-v4-cyrillic_latin-regular.woff") format("woff"), url("../fonts/Pangolin/pangolin-v4-cyrillic_latin-regular.ttf") format("truetype"), url("../fonts/Pangolin/pangolin-v4-cyrillic_latin-regular.svg#Pangolin") format("svg"); }
+  font-family: "Commissioner";
+  src: url("../fonts/Commissioner/100/Commissioner-Thin.woff2") format("woff2"), url("../fonts/Commissioner/100/Commissioner-Thin.otf") format("opentype"), url("../fonts/Commissioner/100/Commissioner-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
 
-body .nofooter header nav, body .nofooter header nav a, body .nofooter main .block .hello, body .nofooter main .block .line, body .nofooter main .block .line a, body footer .copyright {
+@font-face {
+  font-family: "Commissioner";
+  src: url("../fonts/Commissioner/100/Commissioner-ThinItalic.woff2") format("woff2"), url("../fonts/Commissioner/100/Commissioner-ThinItalic.otf") format("opentype"), url("../fonts/Commissioner/100/Commissioner-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Commissioner";
+  src: url("../fonts/Commissioner/200/Commissioner-ExtraLight.woff2") format("woff2"), url("../fonts/Commissioner/200/Commissioner-ExtraLight.otf") format("opentype"), url("../fonts/Commissioner/200/Commissioner-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Commissioner";
+  src: url("../fonts/Commissioner/200/Commissioner-ExtraLightItalic.woff2") format("woff2"), url("../fonts/Commissioner/200/Commissioner-ExtraLightItalic.otf") format("opentype"), url("../fonts/Commissioner/200/Commissioner-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Commissioner";
+  src: url("../fonts/Commissioner/300/Commissioner-Light.woff2") format("woff2"), url("../fonts/Commissioner/300/Commissioner-Light.otf") format("opentype"), url("../fonts/Commissioner/300/Commissioner-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Commissioner";
+  src: url("../fonts/Commissioner/300/Commissioner-LightItalic.woff2") format("woff2"), url("../fonts/Commissioner/300/Commissioner-LightItalic.otf") format("opentype"), url("../fonts/Commissioner/300/Commissioner-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Commissioner";
+  src: url("../fonts/Commissioner/400/Commissioner-Regular.woff2") format("woff2"), url("../fonts/Commissioner/400/Commissioner-Regular.otf") format("opentype"), url("../fonts/Commissioner/400/Commissioner-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Commissioner";
+  src: url("../fonts/Commissioner/400/Commissioner-Italic.woff2") format("woff2"), url("../fonts/Commissioner/400/Commissioner-Italic.otf") format("opentype"), url("../fonts/Commissioner/400/Commissioner-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Commissioner";
+  src: url("../fonts/Commissioner/500/Commissioner-Medium.woff2") format("woff2"), url("../fonts/Commissioner/500/Commissioner-Medium.otf") format("opentype"), url("../fonts/Commissioner/500/Commissioner-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Commissioner";
+  src: url("../fonts/Commissioner/500/Commissioner-MediumItalic.woff2") format("woff2"), url("../fonts/Commissioner/500/Commissioner-MediumItalic.otf") format("opentype"), url("../fonts/Commissioner/500/Commissioner-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Commissioner";
+  src: url("../fonts/Commissioner/600/Commissioner-SemiBold.woff2") format("woff2"), url("../fonts/Commissioner/600/Commissioner-SemiBold.otf") format("opentype"), url("../fonts/Commissioner/600/Commissioner-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Commissioner";
+  src: url("../fonts/Commissioner/600/Commissioner-SemiBoldItalic.woff2") format("woff2"), url("../fonts/Commissioner/600/Commissioner-SemiBoldItalic.otf") format("opentype"), url("../fonts/Commissioner/600/Commissioner-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Commissioner";
+  src: url("../fonts/Commissioner/700/Commissioner-Bold.woff2") format("woff2"), url("../fonts/Commissioner/700/Commissioner-Bold.otf") format("opentype"), url("../fonts/Commissioner/700/Commissioner-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Commissioner";
+  src: url("../fonts/Commissioner/700/Commissioner-BoldItalic.woff2") format("woff2"), url("../fonts/Commissioner/700/Commissioner-BoldItalic.otf") format("opentype"), url("../fonts/Commissioner/700/Commissioner-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Commissioner";
+  src: url("../fonts/Commissioner/800/Commissioner-ExtraBold.woff2") format("woff2"), url("../fonts/Commissioner/800/Commissioner-ExtraBold.otf") format("opentype"), url("../fonts/Commissioner/800/Commissioner-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Commissioner";
+  src: url("../fonts/Commissioner/800/Commissioner-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/Commissioner/800/Commissioner-ExtraBoldItalic.otf") format("opentype"), url("../fonts/Commissioner/800/Commissioner-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Commissioner";
+  src: url("../fonts/Commissioner/900/Commissioner-Black.woff2") format("woff2"), url("../fonts/Commissioner/900/Commissioner-Black.otf") format("opentype"), url("../fonts/Commissioner/900/Commissioner-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Commissioner";
+  src: url("../fonts/Commissioner/900/Commissioner-BlackItalic.woff2") format("woff2"), url("../fonts/Commissioner/900/Commissioner-BlackItalic.otf") format("opentype"), url("../fonts/Commissioner/900/Commissioner-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic; }
+
+body .nofooter header nav, body .nofooter main .block1 .wrapper1 .hello, body .nofooter main .block2 .wrapper2 .line, body footer {
   display: flex;
   align-items: center; }
 
 body {
   float: left;
   min-width: 100%;
-  background-color: #848484; }
+  background-color: #FDF0EC; }
   body .nofooter {
-    min-height: calc(100vh - 80px); }
+    min-height: calc(100vh - 2.5em); }
     body .nofooter header {
-      background-color: #646464;
+      background-color: #E63E11;
       display: flex;
-      justify-content: flex-end;
-      height: 80px; }
+      justify-content: center;
+      height: 2.5em; }
       body .nofooter header nav {
-        justify-content: center; }
+        width: 75em;
+        justify-content: flex-end; }
         body .nofooter header nav a {
-          width: 100px;
-          justify-content: center;
-          font-family: "Pangolin", cursive;
-          font-size: 2em;
+          font-family: "Commissioner", sans-serif;
+          font-weight: 700;
+          font-size: 1.5em;
           text-decoration: none;
-          color: #000000; }
+          color: #FFFFFF; }
           body .nofooter header nav a:hover {
-            color: #FF9100; }
-    body .nofooter main .block {
+            color: #333333; }
+    body .nofooter main .block1 {
       float: left;
-      width: 50%; }
-      body .nofooter main .block .hello {
-        justify-content: space-around;
-        padding: 50px 50px 25px 50px; }
-        body .nofooter main .block .hello svg {
-          width: 200px; }
-          body .nofooter main .block .hello svg path:hover {
-            fill: #FF9100; }
-        body .nofooter main .block .hello span {
-          font-family: "Pangolin", cursive;
-          font-size: 7em;
-          color: #FF9100; }
-      body .nofooter main .block .about {
-        padding: 25px 50px 25px 50px; }
-        body .nofooter main .block .about p {
-          font-family: "Pangolin", cursive;
-          font-size: 2.3em;
-          line-height: 1.2;
-          text-indent: 1em;
-          text-align: justify;
-          color: #FF9100; }
-          body .nofooter main .block .about p a {
-            text-decoration: none;
-            color: #000000; }
-            body .nofooter main .block .about p a:hover {
-              color: #FF9100; }
-      body .nofooter main .block .line {
-        justify-content: space-evenly;
-        padding: 1.1em 0 0 0;
-        font-family: "Pangolin", cursive;
-        font-size: 3em;
-        color: #FF9100; }
-        body .nofooter main .block .line span {
-          font-size: 1.5em; }
-        body .nofooter main .block .line a {
-          text-decoration: none;
-          color: #000000; }
-          body .nofooter main .block .line a svg {
-            width: 1.5em; }
-          body .nofooter main .block .line a:hover path {
-            fill: #FF9100; }
-      body .nofooter main .block .resume a:nth-child(1) {
-        display: inline;
-        font-size: 1.5em;
-        width: 2.5em;
-        border-radius: 1.5em; }
-        body .nofooter main .block .resume a:nth-child(1):hover {
-          background: #FF9100; }
-      body .nofooter main .block .resume a sup {
-        font-size: 0.5em;
-        vertical-align: text-top; }
-      body .nofooter main .block .mail {
-        font-size: 4em;
-        padding: 1.3em 0 1.1em 0; }
-        body .nofooter main .block .mail a:hover {
-          color: #FF9100; }
+      width: 50%;
+      min-height: calc(100vh - 2.5em - 2.5em);
+      background-color: #333333;
+      position: relative; }
+      body .nofooter main .block1 .wrapper1 {
+        position: absolute;
+        right: 7.125em;
+        width: 30.375em;
+        margin-top: 3.5em;
+        margin-bottom: 2.5em; }
+        body .nofooter main .block1 .wrapper1 .hello {
+          justify-content: space-between; }
+          body .nofooter main .block1 .wrapper1 .hello div {
+            margin-right: 3em;
+            margin-left: 1.5em; }
+            body .nofooter main .block1 .wrapper1 .hello div a svg {
+              width: 8em; }
+              body .nofooter main .block1 .wrapper1 .hello div a svg path {
+                fill: #E63E11; }
+                body .nofooter main .block1 .wrapper1 .hello div a svg path:hover {
+                  fill: #FFFFFF; }
+          body .nofooter main .block1 .wrapper1 .hello .name p {
+            font-family: "Commissioner", sans-serif;
+            font-weight: 400;
+            font-size: 1.5em;
+            line-height: 1.33;
+            color: #FFFFFF; }
+            body .nofooter main .block1 .wrapper1 .hello .name p:nth-child(1) {
+              margin-bottom: 1.5em; }
+        body .nofooter main .block1 .wrapper1 .about p {
+          margin-top: 1.5em;
+          font-family: "Commissioner", sans-serif;
+          font-weight: 400;
+          font-size: 1.5em;
+          line-height: 1.33;
+          color: #FFFFFF; }
+          body .nofooter main .block1 .wrapper1 .about p a {
+            font-style: italic;
+            text-decoration: underline;
+            color: #E63E11; }
+            body .nofooter main .block1 .wrapper1 .about p a:hover {
+              color: #FFFFFF; }
+    body .nofooter main .block2 {
+      float: left;
+      width: 50%;
+      position: relative; }
+      body .nofooter main .block2 .wrapper2 {
+        position: absolute;
+        left: 7.125em;
+        width: 30.375em;
+        margin-top: 3.5em;
+        margin-bottom: 2.5em; }
+        body .nofooter main .block2 .wrapper2 .line {
+          justify-content: flex-start;
+          font-family: "Commissioner", sans-serif; }
+          body .nofooter main .block2 .wrapper2 .line span {
+            font-weight: 700;
+            font-size: 2em;
+            color: #E63E11; }
+          body .nofooter main .block2 .wrapper2 .line a {
+            color: #333333;
+            text-decoration: none; }
+            body .nofooter main .block2 .wrapper2 .line a:hover {
+              color: #E63E11; }
+            body .nofooter main .block2 .wrapper2 .line a svg path {
+              fill: #333333; }
+              body .nofooter main .block2 .wrapper2 .line a svg path:hover {
+                fill: #E63E11; }
+        body .nofooter main .block2 .wrapper2 .resume {
+          margin-top: 1.625em; }
+          body .nofooter main .block2 .wrapper2 .resume a:nth-child(1) {
+            font-weight: 700;
+            font-size: 3.5625em; }
+          body .nofooter main .block2 .wrapper2 .resume a sup {
+            font-weight: 700;
+            font-size: 0.6em;
+            vertical-align: super; }
+          body .nofooter main .block2 .wrapper2 .resume a:nth-child(2) {
+            margin-left: 1.625em; }
+            body .nofooter main .block2 .wrapper2 .resume a:nth-child(2) svg {
+              width: 4.75em; }
+          body .nofooter main .block2 .wrapper2 .resume a:nth-child(3) {
+            margin-left: 1.57em; }
+            body .nofooter main .block2 .wrapper2 .resume a:nth-child(3) svg {
+              width: 4.95em; }
+        body .nofooter main .block2 .wrapper2 .git {
+          margin-top: 2.1875em; }
+          body .nofooter main .block2 .wrapper2 .git a:nth-child(1) svg {
+            width: 4.875em; }
+          body .nofooter main .block2 .wrapper2 .git a:nth-child(2) {
+            margin-left: 1.5em; }
+            body .nofooter main .block2 .wrapper2 .git a:nth-child(2) svg {
+              width: 4.875em; }
+          body .nofooter main .block2 .wrapper2 .git a:nth-child(3) {
+            margin-left: 1.53em; }
+            body .nofooter main .block2 .wrapper2 .git a:nth-child(3) svg {
+              width: 4.85em; }
+        body .nofooter main .block2 .wrapper2 .contact {
+          margin-top: 4.8125em; }
+        body .nofooter main .block2 .wrapper2 .social {
+          margin-top: 1.6em; }
+          body .nofooter main .block2 .wrapper2 .social a:nth-child(1) svg {
+            width: 4.875em; }
+          body .nofooter main .block2 .wrapper2 .social a:nth-child(2) {
+            margin-left: 1.5625em; }
+            body .nofooter main .block2 .wrapper2 .social a:nth-child(2) svg {
+              width: 4.75em; }
+          body .nofooter main .block2 .wrapper2 .social a:nth-child(3) {
+            margin-left: 1.554em; }
+            body .nofooter main .block2 .wrapper2 .social a:nth-child(3) svg {
+              width: 5.455em; }
+        body .nofooter main .block2 .wrapper2 .mail {
+          margin-top: 1.6em; }
+          body .nofooter main .block2 .wrapper2 .mail a {
+            font-weight: 700;
+            font-size: 1.75em; }
   body footer {
-    background-color: #646464;
+    background-color: #E63E11;
     float: left;
-    width: 100%; }
-    body footer .copyright {
-      height: 80px;
-      justify-content: space-evenly;
-      font-family: "Pangolin", cursive;
-      font-size: 2em;
-      color: #000000; }
+    width: 100%;
+    height: 2.5em;
+    justify-content: space-evenly; }
+    body footer .copyright span {
+      font-family: "Commissioner", sans-serif;
+      font-weight: 500;
+      font-size: 1.125em;
+      color: #FFFFFF; }
 
 @media (max-width: 950px) {
   body .nofooter {
     min-height: initial; }
-    body .nofooter main .block {
-      width: 100%; }
-      body .nofooter main .block .hello {
-        padding: 20px 10px 10px 10px; }
-        body .nofooter main .block .hello svg {
-          width: 115px; }
-        body .nofooter main .block .hello span {
-          font-size: 5.5em; }
-      body .nofooter main .block .about {
-        padding: 10px 10px 20px 10px; }
-        body .nofooter main .block .about p {
-          font-size: 1.8em; }
-      body .nofooter main .block .line {
-        justify-content: space-around; }
-        body .nofooter main .block .line span {
-          font-size: 1em; }
-        body .nofooter main .block .line a svg {
-          width: 1.3em; }
-      body .nofooter main .block .aboutme {
-        padding: 0.5em 0 0 0; }
-      body .nofooter main .block .resume a:nth-child(1) {
-        font-size: 1.2em; }
-      body .nofooter main .block .mail {
-        font-size: 2.3em;
-        padding: 1.2em 0 1.2em 0; }
-  body footer .copyright {
-    font-size: 1.5em; } }
+    body .nofooter header nav {
+      width: calc(100% - 3em); }
+    body .nofooter main .block1 {
+      width: 100%;
+      min-height: initial;
+      position: static; }
+      body .nofooter main .block1 .wrapper1 {
+        position: static;
+        margin: auto;
+        width: calc(100% - 3em);
+        margin-top: 2em;
+        margin-bottom: 2.5em; }
+        body .nofooter main .block1 .wrapper1 .hello div {
+          margin-right: 1em;
+          margin-left: 0; }
+          body .nofooter main .block1 .wrapper1 .hello div a svg {
+            width: 5.625em; }
+        body .nofooter main .block1 .wrapper1 .hello .name p {
+          font-size: 1.125em; }
+          body .nofooter main .block1 .wrapper1 .hello .name p:nth-child(1) {
+            margin-bottom: 0; }
+        body .nofooter main .block1 .wrapper1 .about p {
+          font-size: 1.125em; }
+    body .nofooter main .block2 {
+      width: 100%;
+      position: static; }
+      body .nofooter main .block2 .wrapper2 {
+        position: static;
+        margin: auto;
+        width: calc(100% - 3em);
+        margin-top: 1.5em;
+        margin-bottom: 2.5em; }
+        body .nofooter main .block2 .wrapper2 .resume {
+          margin-top: 1em; }
+          body .nofooter main .block2 .wrapper2 .resume a:nth-child(1) {
+            font-size: 3.125em; }
+          body .nofooter main .block2 .wrapper2 .resume a:nth-child(2) {
+            margin-left: 1.6em; }
+            body .nofooter main .block2 .wrapper2 .resume a:nth-child(2) svg {
+              width: 3.3125em; }
+          body .nofooter main .block2 .wrapper2 .resume a:nth-child(3) {
+            margin-left: 1.8em; }
+            body .nofooter main .block2 .wrapper2 .resume a:nth-child(3) svg {
+              width: 3.69em; }
+        body .nofooter main .block2 .wrapper2 .git {
+          margin-top: 1.5625em; }
+          body .nofooter main .block2 .wrapper2 .git a:nth-child(1) svg {
+            width: 3.75em; }
+          body .nofooter main .block2 .wrapper2 .git a:nth-child(2) {
+            margin-left: 1.6em; }
+            body .nofooter main .block2 .wrapper2 .git a:nth-child(2) svg {
+              width: 3.75em; }
+          body .nofooter main .block2 .wrapper2 .git a:nth-child(3) {
+            margin-left: 1.7em; }
+            body .nofooter main .block2 .wrapper2 .git a:nth-child(3) svg {
+              width: 3.63em; }
+        body .nofooter main .block2 .wrapper2 .contact {
+          margin-top: 2.644em; }
+        body .nofooter main .block2 .wrapper2 .social {
+          margin-top: 1.06em; }
+          body .nofooter main .block2 .wrapper2 .social a:nth-child(1) svg {
+            width: 3.625em; }
+          body .nofooter main .block2 .wrapper2 .social a:nth-child(2) {
+            margin-left: 1.9em; }
+            body .nofooter main .block2 .wrapper2 .social a:nth-child(2) svg {
+              width: 3.3125em; }
+          body .nofooter main .block2 .wrapper2 .social a:nth-child(3) {
+            margin-left: 1.8em; }
+            body .nofooter main .block2 .wrapper2 .social a:nth-child(3) svg {
+              width: 4.3em; }
+        body .nofooter main .block2 .wrapper2 .mail {
+          margin-top: 1.1em; } }

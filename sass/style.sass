@@ -1,108 +1,174 @@
 @import _reset.sass
+@import _fonts.sass
 @import _variables.sass
     
 body
     float: left
     min-width: 100%
-    background-color: $color_m
+    background-color: $color_light
     .nofooter
         min-height: calc(100vh - #{$height_hf})
         //float: left
         //width: 100%
         header
-            background-color: $color_hf
+            background-color: $color_bright
             display: flex
-            justify-content: flex-end
+            justify-content: center
             height: $height_hf
             nav
+                width: 75em
                 @extend %flex-center
-                justify-content: center
+                justify-content: flex-end
                 a
-                    width: 100px
-                    @extend %flex-center
-                    justify-content: center
-                    font-family: "Pangolin", cursive
-                    font-size: 2em
+                    font-family: "Commissioner", sans-serif
+                    font-weight: 700
+                    font-size: 1.5em
                     text-decoration: none
-                    color: $color_b
+                    color: $color_white
                     &:hover
-                        color: $color
+                        color: $color_black
         main
-            .block
+            .block1
                 float: left
                 width: 50%
-                .hello
-                    @extend %flex-center
-                    justify-content: space-around
-                    padding: 50px 50px 25px 50px
-                    svg
-                        width: 200px
-                        path:hover
-                            fill: $color
-                    span
-                        font-family: "Pangolin", cursive
-                        font-size: 7em
-                        color: $color
-                .about
-                    padding: 25px 50px 25px 50px
-                    p
-                        font-family: "Pangolin", cursive
-                        font-size: 2.3em
-                        line-height: 1.2
-                        text-indent: 1em
-                        text-align: justify
-                        color: $color
-                        a
-                            text-decoration: none
-                            color: $color_b
-                            &:hover
-                                color: $color
-                .line
-                    @extend %flex-center
-                    justify-content: space-evenly
-                    padding: 1.1em 0 0 0
-                    font-family: "Pangolin", cursive
-                    font-size: 3em
-                    color: $color
-                    span
-                        font-size: 1.5em
-                    a
+                min-height: calc(100vh - #{$height_hf} - #{$height_hf})
+                background-color: $color_black
+                position: relative
+                .wrapper1
+                    position: absolute
+                    right: 7.125em
+                    width: 30.375em
+                    margin-top: 3.5em
+                    margin-bottom: 2.5em
+                    .hello
                         @extend %flex-center
-                        text-decoration: none
-                        color: $color_b
-                        svg
-                            width: 1.5em
-                        &:hover
-                            path
-                                fill: $color
-                .resume
-                    a
-                        &:nth-child(1)
-                            display: inline
+                        justify-content: space-between
+                        div
+                            margin-right: 3em
+                            margin-left: 1.5em
+                            a
+                                svg
+                                    width: 8em
+                                    path
+                                        fill: $color_bright
+                                        &:hover
+                                            fill: $color_white
+                        .name
+                            p
+                                font-family: "Commissioner", sans-serif
+                                font-weight: 400
+                                font-size: 1.5em
+                                line-height: 1.33
+                                color: $color_white
+                                &:nth-child(1)
+                                    margin-bottom: 1.5em
+                    .about
+                        p
+                            margin-top: 1.5em
+                            font-family: "Commissioner", sans-serif
+                            font-weight: 400
                             font-size: 1.5em
-                            width: 2.5em
-                            border-radius: 1.5em
+                            line-height: 1.33
+                            color: $color_white
+                            a
+                                font-style: italic
+                                text-decoration: underline
+                                color: $color_bright
+                                &:hover
+                                    color: $color_white
+            .block2
+                float: left
+                width: 50%
+                position: relative
+                .wrapper2
+                    position: absolute
+                    left: 7.125em
+                    width: 30.375em
+                    margin-top: 3.5em
+                    margin-bottom: 2.5em
+                    .line
+                        @extend %flex-center
+                        justify-content: flex-start
+                        font-family: "Commissioner", sans-serif
+                        span
+                            font-weight: 700
+                            font-size: 2em
+                            color: $color_bright
+                        a
+                            color: $color_black
+                            text-decoration: none
                             &:hover
-                                background: $color
-                        sup
-                            font-size: 0.5em
-                            vertical-align: text-top
-                .mail
-                    font-size: 4em
-                    padding: 1.3em 0 1.1em 0
-                    a
-                        &:hover
-                            color: $color
+                                color: $color_bright
+                            svg
+                                path
+                                    fill: $color_black
+                                    &:hover
+                                        fill: $color_bright
+                    .resume
+                        margin-top: 1.625em
+                        a
+                            &:nth-child(1)
+                                font-weight: 700
+                                font-size: 3.5625em
+                            sup
+                                font-weight: 700
+                                font-size: 0.6em
+                                vertical-align: super
+                            &:nth-child(2)
+                                margin-left: 1.625em
+                                svg
+                                    width: 4.75em
+                            &:nth-child(3)
+                                margin-left: 1.57em
+                                svg
+                                    width: 4.95em
+                    .git
+                        margin-top: 2.1875em
+                        a
+                            &:nth-child(1)
+                                svg
+                                    width: 4.875em
+                            &:nth-child(2)
+                                margin-left: 1.5em
+                                svg
+                                    width: 4.875em
+                            &:nth-child(3)
+                                margin-left: 1.53em
+                                svg
+                                    width: 4.85em
+                    .contact
+                        margin-top: 4.8125em
+                    .social
+                        margin-top: 1.6em
+                        a
+                            &:nth-child(1)
+                                svg
+                                    width: 4.875em
+                            &:nth-child(2)
+                                margin-left: 1.5625em
+                                svg
+                                    width: 4.75em
+                            &:nth-child(3)
+                                margin-left: 1.554em
+                                svg
+                                    width: 5.455em
+                    .mail
+                        margin-top: 1.6em
+                        a
+                            font-weight: 700
+                            font-size: 1.75em
     footer
-        background-color: $color_hf
+        background-color: $color_bright
         float: left
         width: 100%
+        height: $height_hf
+        @extend %flex-center
+        justify-content: space-evenly
         .copyright
-            height: $height_hf
-            @extend %flex-center
-            justify-content: space-evenly
-            font-family: "Pangolin", cursive
-            font-size: 2em
-            color: $color_b
+            span
+                font-family: "Commissioner", sans-serif
+                font-weight: 500
+                font-size: 1.125em
+                color: $color_white
             
 @import _media.sass
