@@ -152,7 +152,7 @@ table {
   font-weight: 900;
   font-style: italic; }
 
-body .nofooter header nav, body .nofooter main .block1 .wrapper1 .hello, body .nofooter main .block2 .wrapper2 .line, body footer {
+body .nofooter header nav, body .nofooter main .block1, body .nofooter main .block1 .wrapper1 .hello, body .nofooter main .block2, body .nofooter main .block2 .wrapper2 .line, body footer {
   display: flex;
   align-items: center; }
 
@@ -168,8 +168,7 @@ body {
       justify-content: center;
       height: 2.5em; }
       body .nofooter header nav {
-        width: 75em;
-        justify-content: flex-end; }
+        justify-content: center; }
         body .nofooter header nav a {
           font-family: "Commissioner", sans-serif;
           font-weight: 700;
@@ -183,13 +182,9 @@ body {
       width: 50%;
       min-height: calc(100vh - 2.5em - 2.5em);
       background-color: #333333;
-      position: relative; }
+      justify-content: center; }
       body .nofooter main .block1 .wrapper1 {
-        position: absolute;
-        right: 7.125em;
-        width: 30.375em;
-        margin-top: 3.5em;
-        margin-bottom: 2.5em; }
+        width: 30.375em; }
         body .nofooter main .block1 .wrapper1 .hello {
           justify-content: space-between; }
           body .nofooter main .block1 .wrapper1 .hello div {
@@ -225,13 +220,10 @@ body {
     body .nofooter main .block2 {
       float: left;
       width: 50%;
-      position: relative; }
+      min-height: calc(100vh - 2.5em - 2.5em);
+      justify-content: center; }
       body .nofooter main .block2 .wrapper2 {
-        position: absolute;
-        left: 7.125em;
-        width: 30.375em;
-        margin-top: 3.5em;
-        margin-bottom: 2.5em; }
+        width: 30.375em; }
         body .nofooter main .block2 .wrapper2 .line {
           justify-content: flex-start;
           font-family: "Commissioner", sans-serif; }
@@ -312,13 +304,12 @@ body {
   body .nofooter {
     min-height: initial; }
     body .nofooter header nav {
-      width: calc(100% - 3em); }
+      width: calc(100% - 3em);
+      justify-content: flex-end; }
     body .nofooter main .block1 {
       width: 100%;
-      min-height: initial;
-      position: static; }
+      min-height: initial; }
       body .nofooter main .block1 .wrapper1 {
-        position: static;
         margin: auto;
         width: calc(100% - 3em);
         margin-top: 2em;
@@ -336,9 +327,8 @@ body {
           font-size: 1.125em; }
     body .nofooter main .block2 {
       width: 100%;
-      position: static; }
+      min-height: initial; }
       body .nofooter main .block2 .wrapper2 {
-        position: static;
         margin: auto;
         width: calc(100% - 3em);
         margin-top: 1.5em;
